@@ -1,0 +1,467 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: "Manrope", sans-serif;
+}
+
+
+#encabezado {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background-color: #640747;
+}
+
+#logotipo {
+        width: 60px;
+        height: 60px;
+}
+
+#menu {
+    margin-top: 20px;
+    width: 600px;
+    height: 50px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+}
+
+#menu a {
+    display: inline-block;
+    background-color:#640747;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    font-family: Manrope, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 140px;
+    padding: 10px 12px;
+    border: 3px solid #FFFFFF;
+    border-radius: 35px;
+    transition: all 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #F5A6CC;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/*------------------------------- Sección portada --------------*/
+#portada {
+    width: 100%;
+    overflow: hidden;
+}
+
+#imgportada {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+#imgportada img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/*------------------------------- Sección acerca de mi --------------*/
+
+#acercademi {
+    display: block;
+    padding: 40px 20px;
+}
+
+
+#imgperfil {
+    position: relative;
+    width: 280px;
+    height: 330px;
+    margin: 0;
+    flex-shrink: 0;
+    padding: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+#imgperfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cinta {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    width: 110px;
+    height: 30px;
+    background-color: rgba(245, 166, 204, 0.85);
+    transform: translateX(-50%) rotate(-3deg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Título */
+#encabezadoacercademi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+#textoacercademi h1 {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-size: 64px;           
+    line-height: 1.1;
+    margin: 20px 0 0;          
+    color: #FF5FA2;
+    text-align: center;
+}
+
+
+/* ----- Parte inferior: presentación y habilidades ----- */
+
+#presentacion {
+    text-align: left;
+}
+
+#presentacion p {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;      
+    line-height: 1.6;
+    margin: 0 0 14px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+#presentacion p:last-child {
+    text-align: center;
+    margin-top: 24px;
+}
+
+#habilidades-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 60px auto 40px;
+    padding: 20px;
+}
+
+.columna-habilidad {
+    flex: 1;
+    text-align: center;
+}
+
+.columna-habilidad h2 {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0 0 24px;
+    color: #FF5FA2;
+    text-transform: uppercase;   
+}
+
+.columna-habilidad img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#descarga {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0 40px;
+}
+
+#descarga p {
+    margin: 0 0 10px;
+}
+
+#descarga a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+#descarga img {
+    width: 100px;        
+    height: auto;
+    display: block;
+}
+
+#descarga a:hover {
+    transform: scale(1.1);
+}
+
+/*------------------------------- Portafolio --------------*/
+
+#portafolio {
+    text-align: center;
+}
+
+#portafolio h2 {
+    display: inline-block;
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    margin: 40px 0 10px;
+    padding: 12px 50px;
+    color: #FF5FA2;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 4px solid #FF5FA2;
+    border-radius: 50px;
+}
+
+#trabajos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#trabajos h3 {
+    font-family: "Sniglet", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: #640747;
+}
+
+#trabajos figure {
+    margin: 0 0 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#trabajos img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.boton {
+    margin: 15px auto;
+    width: 170px;
+    background-color: #640747;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.boton a {
+    display: block;
+    padding: 12px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boton:hover {
+    background-color: #F5A6CC;
+    transform: scale(1.05);
+}
+
+
+/*------------------------------- Contacto --------------*/
+
+#contacto {
+    background-color: #640747;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#contacto h2 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#contacto p {
+    margin: 0 0 12px;
+    font-size: 13px;
+    color: #bbb;
+}
+
+#contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#contacto ul a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#contacto ul a:hover {
+    background-color: rgb(254, 174, 209);
+    border-color: rgb(254, 174, 209);
+}
+
+/*------------------------------- Página de proyecto --------------*/
+
+#proyecto {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px 50px;
+    text-align: center;
+}
+
+/* Breadcrumbs en píldora */
+.migas {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #640747;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+.migas a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.migas a:hover {
+    color: #F5A6CC;
+}
+
+/* Título + descripción | imagen */
+.proyecto-contenido {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.proyecto-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.proyecto-texto h1 {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1.1;
+    margin: 0 0 20px;
+    color: #FF5FA2;
+    text-transform: uppercase;
+    text-align: center;      
+}
+
+.proyecto-texto p {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 14px;
+    text-align: justify;
+}
+
+.proyecto-imagen {
+    flex: 1;
+    margin: 0;
+}
+
+.proyecto-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    animation: aparecer 1s ease both;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Flecha de regreso */
+.volver {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+    border: 3px solid #640747;
+    border-radius: 50%;
+    color: #640747;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.volver:hover {
+    background-color: #F5A6CC;
+    border-color: #F5A6CC;
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+    .proyecto-contenido {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .proyecto-texto h1 {
+        font-size: 48px;
+    }
+}
